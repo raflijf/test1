@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #0F0E17;
+}
+
+/* navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    height: 8%;
+    align-items: center;
+    background-color: black;
+    backdrop-filter: blur(20px);
+}
+.navbar .logo {
+    display: flex;
+}
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.navbar .logo h3 {
+    color: #F00;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 0.5rem;
+}
+.navbar .humburgermenu {
+    background: none;
+    border: none;
+    display: none;
+}
+.navbar .navigasi {
+    display: flex;
+    list-style:none;
+    width: 40%;
+    justify-content: space-between;
+}
+.navbar .navigasi  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar .navigasi  a:hover {
+    text-decoration: underline ;
+}
+
+.navbar .navigasi  span {
+    color: red;
+}
+.navbar .navigasi button {
+    background: none;
+    border: none;
+    color: red;
+    z-index: 99999;
+}
+.navbar .navigasi .opsi {
+    position: fixed;
+    list-style: none;
+    background:black;
+    padding: 0 0.4rem;
+    /* display: grid; */
+}
+
+
+
+/* tablet */
+@media screen and (max-width:1023px) {
+    .navbar .navigasi  a {
+        font-size: 12px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+    .navbar .navigasi {
+        display: none;
+    }
+    .navbar .humburgermenu {
+        display: flex;
+    }
+}
+.menu .navigasi-menu{
+    position: fixed;
+    top: 3.1rem;
+    background-color: black;
+    width: 100%;
+}
+.menu .navigasi-menu li {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+.menu .navigasi-menu li a {
+    color: white;
+    text-decoration: none;
+
+}
